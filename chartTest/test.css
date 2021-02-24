@@ -1,0 +1,5 @@
+.headerPage
+{position: fixed;
+min-width: auto;
+box-shadow: var(--bs-sm);
+}

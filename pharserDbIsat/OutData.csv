@@ -1,0 +1,20 @@
+Log start: 190423-171400 - 10.190.28.145 - moshell 18.0e - /home/shared/emarosd/reza/KGET_RNDMK02.log
+
+RNDMK02> kget all
+
+190423-17:14:03 10.190.28.145 18.0e RNC_NODE_MODEL_V_13_652 stopfile=/tmp/8836
+
+Getting MO data from node (108092 MOs). Please wait...
+0%                                             ~50%                                           ~100%
+=================================================================================================================
+Proxy Id                             0
+MO                                   SubNetwork=ONRM_ROOT_MO,SubNetwork=RNDMK02,MeContext=RNDMK02,ManagedElement=1
+=================================================================================================================
+ManagedElementId                     1
+applicationConfiguration[0]          
+faultTolerantCoreStates[2]           ManagedElement=1,Equipment=1,Subrack=MS,Slot=3,PlugInUnit=1;ftcState=PassiveReady ManagedElement=1,Equipment=1,Subrack=MS,Slot=25,PlugInUnit=1;ftcState=Active 
+Struct healthCheckResult has 3 members:
+ >>> 1.healthCheckResultCode = 0 (OK)
+ >>> 2.message = 
+ >>> 3.startTime = 2019-04-21 19:00
+healthCheckSchedule[1]               

@@ -1,0 +1,1 @@
+"C:\Python27\python.exe" "D:\resultFtp\job01downloadFtpImportCsvToSqlserverH-1.py"

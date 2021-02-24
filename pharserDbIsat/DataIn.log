@@ -1,0 +1,116 @@
+Log start: 190423-171400 - 10.190.28.145 - moshell 18.0e - /home/shared/emarosd/reza/KGET_RNDMK02.log
+
+RNDMK02> kget all
+
+190423-17:14:03 10.190.28.145 18.0e RNC_NODE_MODEL_V_13_652 stopfile=/tmp/8836
+
+Getting MO data from node (108092 MOs). Please wait...
+0%                                             ~50%                                           ~100%
+=================================================================================================================
+Proxy Id                             0
+MO                                   SubNetwork=ONRM_ROOT_MO,SubNetwork=RNDMK02,MeContext=RNDMK02,ManagedElement=1
+=================================================================================================================
+ManagedElementId                     1
+applicationConfiguration[0]          
+faultTolerantCoreStates[2]           ManagedElement=1,Equipment=1,Subrack=MS,Slot=3,PlugInUnit=1;ftcState=PassiveReady ManagedElement=1,Equipment=1,Subrack=MS,Slot=25,PlugInUnit=1;ftcState=Active 
+Struct healthCheckResult has 3 members:
+ >>> 1.healthCheckResultCode = 0 (OK)
+ >>> 2.message = 
+ >>> 3.startTime = 2019-04-21 19:00
+healthCheckSchedule[1]               
+ >>> Struct[0]  has 2 members:
+ >>> 1.time = 19:00
+ >>> 2.weekday = 1 (SUNDAY)
+logicalName                          RNDMK02
+Struct mimInfo has 3 members:
+ >>> 1.mimName = RNC_NODE_MODEL_V
+ >>> 2.mimVersion = 13.652
+ >>> 3.mimRelease = 
+productName                          EVO8200
+productNumber                        
+productRevision                      
+productType                          Node
+site                                 RNDMK02
+userLabel                            RNDMK02
+=================================================================================================================
+Proxy Id                             1
+MO                                   SubNetwork=ONRM_ROOT_MO,SubNetwork=RNDMK02,MeContext=RNDMK02,ManagedElement=1,ManagedElementData=1
+=================================================================================================================
+ManagedElementDataId                 1
+autoConfigurationAllowed             false
+autoConfigurationStatus              0 (IDLE)
+docLibSystemDefined                  EN/LZN7340013/3 R3C
+docLibUserDefined                    
+documentServerAddress                
+hdVolumeCFreespaceExt                231
+hdVolumeCSizeExt                     1464
+logonServerAddress                   
+minimumHdVolumeCFreespace            20
+nodeUniqueID                         
+piuGroupEscalationType               4 (WARM_AT_PIU_RESTART)
+swServerUrlList                      
+=================================================================================================================
+Proxy Id                             2
+MO                                   SubNetwork=ONRM_ROOT_MO,SubNetwork=RNDMK02,MeContext=RNDMK02,ManagedElement=1,SystemFunctions=1
+=================================================================================================================
+SystemFunctionsId                    1
+userLabel                            
+=================================================================================================================
+Proxy Id                             3
+MO                                   SubNetwork=ONRM_ROOT_MO,SubNetwork=RNDMK02,MeContext=RNDMK02,ManagedElement=1,SystemFunctions=1,PmService=1
+=================================================================================================================
+PmServiceId                          1
+maxNoOfCounters                      5000000
+maxNoOfMonitors                      30
+maxNoOfPmFiles                       100
+minorAlarmCeasingDelta               5
+performanceDataPath                  /p002600/pm_data
+performanceDataVolume                /p002600/
+transactionTimeOut                   60
+userLabel                            
+warningAlarmCeasingDelta             5
+warningAlarmLimitPercent             80
+=================================================================================================================
+Proxy Id                             4
+MO                                   SubNetwork=ONRM_ROOT_MO,SubNetwork=RNDMK02,MeContext=RNDMK02,ManagedElement=1,SystemFunctions=1,WebServer=1
+=================================================================================================================
+WebServerId                          1
+reservedBySwAllocation[0]            
+userLabel                            
+webServerPaths                       /c/loadmodules_norepl/CXC1721554_R101H01:/c/loadmodules_norepl/CXC1735939%12_R2CB03/:/c/loadmodules_norepl/CXC1735969%12_R2CB03/:/c/loadmodules_norepl/CXC1732953%27_R26A01:/c/loadmodules_norepl/CXC1729176%27_R26A01:/c/loadmodules_norepl/CXC1737497%27_R26A01:/c/loadmodules_norepl/CXC1737124%3_R26A01:/c/loadmodules_norepl/CXC1725045%27_R26A01:/c/loadmodules_norepl/CXC1738811%27_R26A01/:/c/loadmodules_norepl/CXC1724231_R101H01:/c/loadmodules_norepl/CXC1725037%27_R26A01:/c/loadmodules_norepl/CXC1738814%27_R26A01/:/c/loadmodules_norepl/CXC1725059%27_R26A01:/c/loadmodules_norepl/CXC1735954%12_R2CB03/:/c/rnc/configuration/CXC1735935%12_R2CB03:/c/loadmodules_norepl/CXC1738809%27_R26A01/:/c/loadmodules_norepl/CXC1735965%12_R2CB03/:/c/loadmodules_norepl/CXC1735946%12_R2CB03/:/c/loadmodules_norepl/CXC1735938%12_R2CB03/:/c/loadmodules_norepl/CXC1725060%27_R26A01:/c/loadmodules_norepl/CXC1735968%12_R2CB03/:/c/loadmodules_norepl/CXC1738810%27_R26A01/:/c/loadmodules_norepl/CXC1737499%27_R26A01:/c/loadmodules_norepl/CXC1721552_R101H01:/c/loadmodules_norepl/CXC1721556_R101H01:/c/loadmodules_norepl/CXC1729068%27_R26A01:/c/loadmodules_norepl/CXC1735901%12_R2CB03/:/c/loadmodules_norepl/CXC1738813%27_R26A01/:/c/loadmodules_norepl/CXC1731219_R100A01:/c/loadmodules_norepl/CXC1735931%12_R2CB03/:/c/loadmodules_norepl/CXC1736665%27_R26A01:/c/loadmodules_norepl/CXC1725616%27_R26A01:/c/loadmodules_norepl/CXC1735942%12_R2CB03/:/c/loadmodules_norepl/CXC1322456%27_R26A01:/c/loadmodules_norepl/CXC1735972%12_R2CB03/:/c/loadmodules_norepl/CXC1735953%12_R2CB03/:/c/loadmodules_norepl/CXC1724447%27_R26A01/:/c/loadmodules_norepl/CXC1735964%12_R2CB03/:/c/loadmodules_norepl/CXC1730626_R101H01:/c/loadmodules_norepl/CXC1322459%27_R26A01:/c/loadmodules_norepl/CXC1735937%12_R2CB03/:/c/loadmodules_norepl/CXC1322601%27_R26A01:/c/loadmodules_norepl/CXC1735967%12_R2CB03/:/c/loadmodules_norepl/CXC1737498%27_R26A01:/c/loadmodules_norepl/CXC1725027%27_R26A01:/c/loadmodules_norepl/CXC1738812%27_R26A01/:/c/loadmodules_norepl/CXC1735941%12_R2CB03/:/c/loadmodules_norepl/CXC1735971%12_R2CB03/:/c/loadmodules_norepl/CXC1725686%27_R26A01:/c/loadmodules_norepl/CXC1322458%27_R26A01:/c/loadmodules_norepl/CXC1735936%12_R2CB03/:/c/loadmodules_norepl/CXC1725870_R101H01:/c/loadmodules_norepl/CXC1725874_R101H01:/c/loadmodules_norepl/CXC1725878_R101H01:/c/loadmodules_norepl/CXC1735958%12_R2CB03/:/c/loadmodules_norepl/CXC1726066_R101H01:/c/loadmodules_norepl/CXC1725866_R101H01:/c/loadmodules_norepl/CXC1735962%12_R2CB03/:/c/loadmodules_norepl/CXC1735957%12_R2CB03/:/c/loadmodules_norepl/CXC1725605_R101H01:/c/loadmodules_norepl/CXC1725872_R101H01:/c/loadmodules_norepl/CXC1725876_R101H01:/c/loadmodules_norepl/CXC1741001_R101B01:/c/loadmodules_norepl/CXC1735961%12_R2CB03/:/c/loadmodules_norepl/CXC1735956%12_R2CB03/:/c/loadmodules_norepl/CXC1731609_R101H01:/c/loadmodules_norepl/CXC1728447_R101H01:/c/loadmodules_norepl/CXC1725868_R101H01:/c/loadmodules_norepl/CXC1735959%12_R2CB03/:/c/loadmodules_norepl/CXC1725871_R101H01:/c/loadmodules_norepl/CXC1725875_R101H01:/c/loadmodules_norepl/CXC1733655_R101H01:/c/loadmodules_norepl/CXC1726246_R101H01:/c/loadmodules_norepl/CXC1735960%12_R2CB03/:/c/loadmodules_norepl/CXC1735963%12_R2CB03/:/c/loadmodules_norepl/CXC1725867_R101H01:
+=================================================================================================================
+Proxy Id                             5
+MO                                   SubNetwork=ONRM_ROOT_MO,SubNetwork=RNDMK02,MeContext=RNDMK02,ManagedElement=1,SystemFunctions=1,Ncli=1
+=================================================================================================================
+NcliId                               1
+administrativeState                  1 (UNLOCKED)
+operationalState                     1 (ENABLED)
+=================================================================================================================
+Proxy Id                             6
+MO                                   SubNetwork=ONRM_ROOT_MO,SubNetwork=RNDMK02,MeContext=RNDMK02,ManagedElement=1,SystemFunctions=1,MibManager=1
+=================================================================================================================
+MibManagerId                         1
+dumpFile                             
+mibDumpState                         0 (OK)
+userLabel                            
+=================================================================================================================
+Proxy Id                             7
+MO                                   SubNetwork=ONRM_ROOT_MO,SubNetwork=RNDMK02,MeContext=RNDMK02,ManagedElement=1,SystemFunctions=1,Licensing=1
+=================================================================================================================
+LicensingId                          1
+Struct emergencyStateInfo has 3 members:
+ >>> 1.expiryTime = 
+ >>> 2.state = 0 (NEVER_USED)
+ >>> 3.time = 0
+fingerprint                          X912244499
+Struct integrationUnlockStateInfo has 3 members:
+ >>> 1.expiryTime = 
+ >>> 2.remainingTime = 0
+ >>> 3.state = 2 (USE_DISABLED)
+lastLicensingPiChange                190325-205101
+licenseFileUrl                       http://10.190.28.145/keyfiles/Licensing.xml
+licenseFileUrlIpv6                   
+userLabel                            
+=================================================================================================================
+Proxy Id                             8
+MO                                   SubNetwork=ONRM_ROOT_MO,SubNetwork=RNDMK02,MeContext=RNDMK02,ManagedElement=1,SystemFunctions=1,Licensing=1,RncFeature=FlexibleIntraFreqMeasInit
