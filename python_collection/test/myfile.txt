@@ -1,0 +1,4 @@
+monster
+mechine
+haize
+blaze
