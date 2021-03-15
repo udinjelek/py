@@ -8,14 +8,14 @@ import keyboard
 import random
 import win32api, win32con
 import os
-
+print(os.getcwd())
 from python_imagesearch.imagesearch import imagesearch
 startTime = datetime.datetime.now()
 print("First Attempt Time :", startTime)
 stateProgram = "OpenProgram"
 stateLoop = True
 timeCounter = 0
-timeFail = 0
+timeFail = 1
 while stateLoop == True:
     # do something
     time.sleep(1)
@@ -35,7 +35,8 @@ while stateLoop == True:
             stateLoop = False
             break
        
-        pos = imagesearch("./stateMycomFull.PNG")
+        #pos = imagesearch(os.path.join(os.getcwd(),"stateMycomFull.PNG"))
+        pos = imagesearch("stateMycomFull.PNG")
         if pos[0] != -1:
             # print("position : ", pos[0], pos[1])
             print("No Failed :" , timeFail," --- time Failed :",datetime.datetime.now())
@@ -48,7 +49,8 @@ while stateLoop == True:
         else:
             timeCounter = timeCounter + 1
         
-        pos = imagesearch("./stateMycomSuccess.PNG")
+        #pos = imagesearch(os.path.join(os.getcwd(),"stateMycomSuccess.PNG"))
+        pos = imagesearch("stateMycomSuccess.PNG")
         if pos[0] != -1:
             # print("position : ", pos[0], pos[1])
             # print("Success")
@@ -61,7 +63,9 @@ endTime = datetime.datetime.now()
 print("================================")
 print("Start Attempt Time :", startTime)
 print("  End Attempt Time :", endTime)
-print("Total Attempt      :", (timeFail + 1))
+print("   Elapsed of Time :", endTime - startTime)
+print("Total Attempt      :", timeFail)
+
 print("================================")
 
 

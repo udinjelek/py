@@ -39,10 +39,14 @@ from pyautogui import *
 time.sleep(3)
 pyautogui.hotkey('enter')
 
-# masterPath = (os.getcwd())
-# targetPath = (os.path.join(os.path.dirname(os.path.dirname(os.getcwd())),"loopBreak"))
-# os.chdir(targetPath)
+masterPath = (os.getcwd())
+targetPath = (os.path.join(os.path.dirname(os.path.dirname(os.getcwd())),"loopBreak"))
+os.chdir(targetPath)
 
 time.sleep(3)
-import openMycomUntilEnd
 
+
+# import subprocess
+# subprocess.call([os.path.join(targetPath,'callPy_openMycomUntilEnd.bat')])
+
+exec(open(os.path.join(targetPath,'openMycomUntilEnd.py')).read())
