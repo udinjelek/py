@@ -69,29 +69,23 @@ def printComparationFile(folderDetact,mode='normal'):
     table['Old1-Old2']=table[dateObjArr[1]]-table[dateObjArr[2]]
     table['New0-Old1']=table[dateObjArr[0]]-table[dateObjArr[1]]
     print (table)
-    input("Code is end in here")
+    print("=============================================================================================")
+    print(" ")
+    print(" ")
+    
     # print(dateObjArr)
 
 
 print("=========================================================== PERCAUSE ========================")
 folderDetact = r'C:\Eri\report\percause\rawData'
 printComparationFile(folderDetact)
-print("=============================================================================================")
-print(" ")
-print(" ")
 print("=========================================================== HIGH UTIL =======================")
 folderDetact = r'C:\Eri\report\high utilization\rawData'
 printComparationFile(folderDetact)
-print("=============================================================================================")
-print(" ")
-print(" ")
 print("=========================================================== WCL Need Improve 1 ===============")
 folderDetact = r'C:\Eri\report\wcl need improve\rawData'
 printComparationFile(folderDetact,'odd')
-print("=============================================================================================")
-print(" ")
-print(" ")
 print("=========================================================== WCL Need Improve 2 ==============")
 folderDetact = r'C:\Eri\report\wcl need improve\rawData'
 printComparationFile(folderDetact,'even')
-print("=============================================================================================")
+input("Code is end in here")
