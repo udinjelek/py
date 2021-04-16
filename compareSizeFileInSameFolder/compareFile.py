@@ -1,6 +1,10 @@
 import os 
 import pandas as pd
 
+from os import system
+system('mode con: cols=135 lines=55')
+os.system('mode horizontalSizeInNumber or horizontalSizeInNumber_setToZero and verticalSizeInNumber')
+
 def printComparationFile(folderDetact,mode='normal'):
     os.chdir(folderDetact)
     listPathAll = sorted(filter(os.path.isfile, os.listdir('.')), reverse=True)
