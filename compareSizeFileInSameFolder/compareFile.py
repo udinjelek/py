@@ -69,6 +69,7 @@ def printComparationFile(folderDetact,mode='normal'):
     table['Old1-Old2']=table[dateObjArr[1]]-table[dateObjArr[2]]
     table['New0-Old1']=table[dateObjArr[0]]-table[dateObjArr[1]]
     print (table)
+    input("Code is end in here")
     # print(dateObjArr)
 
 
