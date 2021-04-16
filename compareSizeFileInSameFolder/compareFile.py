@@ -1,13 +1,16 @@
 import os 
 import pandas as pd
 
-def printComparationFile(folderDetact):
+def printComparationFile(folderDetact,mode='normal'):
     os.chdir(folderDetact)
     listPathAll = sorted(filter(os.path.isfile, os.listdir('.')), reverse=True)
 
     listPath = []
     dateObjArr = []
     dateNow = ""
+    maxCountDate = 4
+    if (mode!='normal'):
+        maxCountDate = maxCountDate * 2
 
     sListDate = [] #source List Date File
     sListName = [] #source List Name File
@@ -21,17 +24,31 @@ def printComparationFile(folderDetact):
         sizeDetact =  round(os.path.getsize(fullPath) / 1024 ) # size in bytes / 1000 -> Kbytes -> remove decimal From 127.4598 -> 127
         if (dateNow != dateDetact):
 
-            if (dateCounter > 3):
+            if (dateCounter >= maxCountDate):
                 break
-            dateObjArr.append(dateDetact)
             dateCounter = dateCounter + 1
             dateNow = dateDetact
+            
+            if (mode=='normal'):
+                dateObjArr.append(dateDetact)
+            if (mode=='odd' and (dateCounter %2) == 1):
+                dateObjArr.append(dateDetact)
+            if (mode=='even' and (dateCounter %2) == 0):
+                dateObjArr.append(dateDetact)
+            
         listPath.append(name)
-
-        sListName.append(nameDetact)
-        sListDate.append(dateDetact)
-        sListSize.append(sizeDetact)
-
+        if (mode=='normal'):
+            sListName.append(nameDetact)
+            sListDate.append(dateDetact)
+            sListSize.append(sizeDetact)
+        if (mode=='odd' and (dateCounter %2) == 1):
+            sListName.append(nameDetact)
+            sListDate.append(dateDetact)
+            sListSize.append(sizeDetact)
+        if (mode=='even' and (dateCounter %2) == 0):
+            sListName.append(nameDetact)
+            sListDate.append(dateDetact)
+            sListSize.append(sizeDetact)
     # print(sListDate)
     # print(sListName)
     # print(sListSize)
@@ -47,21 +64,33 @@ def printComparationFile(folderDetact):
 
     table=pd.pivot_table(df,index='Name',columns='Date',values='Size',aggfunc='mean')
     
-    table['diff Old-Old2']=table[dateObjArr[1]]-table[dateObjArr[2]]
-    table['diff New-Old']=table[dateObjArr[0]]-table[dateObjArr[1]]
+    table['|']="|"
+    table['Old2-Old3']=table[dateObjArr[2]]-table[dateObjArr[3]]
+    table['Old1-Old2']=table[dateObjArr[1]]-table[dateObjArr[2]]
+    table['New0-Old1']=table[dateObjArr[0]]-table[dateObjArr[1]]
     print (table)
+    # print(dateObjArr)
 
-folderDetact = r'C:\Eri\report\percause\rawData'
+
 print("=========================================================== PERCAUSE ========================")
+folderDetact = r'C:\Eri\report\percause\rawData'
 printComparationFile(folderDetact)
 print("=============================================================================================")
 print(" ")
 print(" ")
-print(" ")
-folderDetact = r'C:\Eri\report\high utilization\rawData'
 print("=========================================================== HIGH UTIL =======================")
+folderDetact = r'C:\Eri\report\high utilization\rawData'
 printComparationFile(folderDetact)
 print("=============================================================================================")
-
-# folderDetact = r'C:\Eri\report\wcl need improve\rawData'
-# printComparationFile(folderDetact)
+print(" ")
+print(" ")
+print("=========================================================== WCL Need Improve 1 ===============")
+folderDetact = r'C:\Eri\report\wcl need improve\rawData'
+printComparationFile(folderDetact,'odd')
+print("=============================================================================================")
+print(" ")
+print(" ")
+print("=========================================================== WCL Need Improve 2 ==============")
+folderDetact = r'C:\Eri\report\wcl need improve\rawData'
+printComparationFile(folderDetact,'even')
+print("=============================================================================================")
