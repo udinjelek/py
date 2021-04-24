@@ -24,7 +24,7 @@ driver.get(url)
 time.sleep(5)
 
 driver.find_element_by_id('loginName').send_keys('M_Rizaq')
-driver.find_element_by_id('password').send_keys('Ericsson12345678!')
+driver.find_element_by_id('password').send_keys('Ericsson123456789!')
 driver.find_element_by_id('password').send_keys(Keys.ENTER)
 
 if os.path.exists(r'C:\Users\earginm\Downloads\Proptima.jnlp'):
