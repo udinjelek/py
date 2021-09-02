@@ -1,0 +1,9 @@
+IP FTP :,10.34.145.89
+username FTP :,twampdata
+password FTP :,twamp2021
+folder FTP :,-
+downloadDay H minus :,2
+folder Output :,outputFtp
+clearFolderFtpWhenStart :,TRUE
+listWords :,P2R Lost Percentage
+listWords :,R2P Lost Percentage

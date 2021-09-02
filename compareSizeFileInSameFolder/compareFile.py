@@ -84,7 +84,7 @@ print("=========================================================== PERCAUSE ====
 folderDetact = r'C:\Eri\report\percause\rawData'
 printComparationFile(folderDetact)
 print("=========================================================== HIGH UTIL =======================")
-folderDetact = r'C:\Eri\report\high utilization\rawData'
+folderDetact = r'C:\Eri\report\highutilization\rawData'
 printComparationFile(folderDetact)
 print("=========================================================== WCL Need Improve 1 ===============")
 folderDetact = r'C:\Eri\report\wcl need improve\rawData'
