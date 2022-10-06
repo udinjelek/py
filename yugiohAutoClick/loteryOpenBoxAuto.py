@@ -6,7 +6,7 @@ from pyautogui import *
 import keyboard
 import random
 import win32api, win32con
-
+print("Press Q for Quit")
 while True:
     # do something
     time.sleep(0.5)
